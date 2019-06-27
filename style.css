@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+}
+
+.page-header {
+  position: relative;
+  height: 500px;
+}
+
+.page-header-image {
+  position: absolute;
+  z-index: -1;
+}
+
+.navigation-wrapper {
+  background-color: #FFF;
+  z-index: 0
+}
+
+.navigation {
+  width: 960px;
+  height: 75px;
+  margin: auto;
+}
+
+.navigation-brand {
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  background-color: #FFF;
+}
+
+.navigation-brand b {
+  margin-right: 5px;
+}
+
+.navigation-list {
+  list-style: none;
+  float: right;
+  padding:0;
+  margin:0;
+  display: flex;
+  background-image: url("menu_cut.jpg");
+}
+
+.navigation-item {
+  cursor: pointer;
+  display: inline-block;
+  height: 75px;
+  padding: 0px 37px;
+  background-color: #FFF;
+}
+
+.navigation-item.active {
+  background-color: rgba(0,0,0,0) !important;
+  color: #FFF;
+}
+
+.navigation-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #10115;
+
+}
+
+.navigation-item:hover {
+  background-color: #f3f3f3;
+}
