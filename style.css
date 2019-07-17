@@ -309,6 +309,47 @@ a[href*="themeforest"] {
   color: #474a4c;
 }
 
+.opinion.last {
+  border-bottom: 1px solid #bbb;
+}
+
+.opinion-triangle {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  transform: rotate(-45deg);
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background-color: white;
+  z-index: 1;
+  float: right;
+  top: -8px;
+  right: 25px;
+}
+
+.options-triangle-second {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+  top: -14px;
+  height: 1px;
+  float: right;
+}
+
+.options-triangle-second::after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  position: relative;
+  transform: rotate(-45deg);
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  float: right;
+  top: -9px;
+  right: 24px;
+  background: white;
+}
+
 .rightside ul {
   margin: -10px 0 0 -40px;
 }
