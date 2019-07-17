@@ -281,12 +281,17 @@ a[href*="themeforest"] {
 }
 
 .leftside a {
+  transition: all 0.3s;
   border: 5px solid #fff;
   box-shadow: 0 0 0 1px #dbdbdb;
+  background-clip: padding-box;
+
 }
 
 .leftside a:hover {
-  border: 5px solid #bbb;
+  background-color: #d76203;
+  border: 5px solid #f5f5f5;
+  box-shadow: 0px 0px 0px 1px #cbcbcb;
 }
 
 .rightside {
