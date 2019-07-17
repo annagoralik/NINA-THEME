@@ -328,12 +328,14 @@ a[href*="themeforest"] {
 }
 
 .options-triangle-second {
-  border-top: 1px solid #ccc;
-  width: 100%;
+  border-bottom: 1px solid #ccc;
+  width: 316px;
   position: relative;
-  top: -14px;
-  height: 1px;
+  top: -18px;
+  height: 4px;
   float: right;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .options-triangle-second::after {
@@ -345,8 +347,8 @@ a[href*="themeforest"] {
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   float: right;
-  top: -9px;
-  right: 24px;
+  top: -4px;
+  right: 23px;
   background: white;
 }
 
