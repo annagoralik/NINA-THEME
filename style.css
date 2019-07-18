@@ -80,7 +80,7 @@ body {
   font-size: 45px;
   padding-top: 120px;
   margin-top: 0;
-  letter-spacing: 0 !important;
+  letter-spacing: normal;
 }
 
 .drivertext h4 {
@@ -88,7 +88,7 @@ body {
   font-weight: 300;
   font-size: 25px;
   margin-top: -20px;
-  letter-spacing: 0 !important;
+  letter-spacing: normal;
 }
 
 .pxline {
@@ -102,8 +102,6 @@ body {
 }
 
 .button {
-  display: block;
-  float: left;
   height: 20px;
   background-color: #e66e0d;
   font-size: 15px;
@@ -114,7 +112,6 @@ body {
   padding: 15px 35px;
   border: 5px solid rgba(0, 0, 0, .2);
   background-clip: padding-box;
-  position: relative;
   text-shadow: 0px 1px #d72d05;
   transition: opacity 0.5s;
 }
@@ -126,7 +123,8 @@ body {
 }
 
 .driver .button {
-  margin: 25px 0 0 530px;
+  position: relative;
+  top: 43px;
 }
 
 .content {
@@ -135,13 +133,18 @@ body {
   padding: 10px;
 }
 
+.triple-column {
+  height: 152px;
+  margin-bottom: 35px;
+}
+
 .thirds
 {
 float: left;
 width: 30%;
-margin: 0 15px 35px 0;
+margin-right: 30px;
 color: #37393a;
-letter-spacing: 0px !important;
+letter-spacing: normal;
 }
 
 .thirds h1 {
@@ -160,22 +163,24 @@ letter-spacing: 0px !important;
   line-height: 23px;
 }
 
-a[href*="themeforest"] {
+.triple-column a, .more a {
   color: orange;
+  transition: color 0.3s ease-in-out;
+}
+
+.triple-column a:hover, .more a:hover {
+  color: black;
 }
 
 .banner {
-  clear: both;
   display: flex;
-  justify-content: space-between;
-  background-color: #000;
+  background-color: #373737;
   color: #c3ccd5;
   width: 922px;
-  height: 111px;
+  height: 110px;
   padding: 10px 0 0 20px;
   font-weight: 300;
   margin-bottom: 50px;
-  background-image: url(banner1.jpg);
 }
 
 .banner p {
@@ -188,15 +193,24 @@ a[href*="themeforest"] {
   font-weight: 300;
 }
 
-.banner .button
-{
+.banner .button {
   margin: 21px 32px 0 50px;
+}
+
+.banner .pxline-vertical {
+  width: 1px;
+  height: 100%;
+  color: green;
 }
 
 .portfolio {
   font-size: 30px;
   font-weight: 300;
   color: #37393a;
+}
+
+.portfolio .title {
+  margin-bottom: 25px;
 }
 
 .photo
@@ -245,7 +259,7 @@ a[href*="themeforest"] {
   font-size: 20px;
   font-weight: 400;
   color: #37393a;
-  letter-spacing: 0 !important;
+  letter-spacing: normal;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -352,30 +366,32 @@ a[href*="themeforest"] {
   background: white;
 }
 
-.rightside ul {
-  margin: -10px 0 0 -40px;
+.rightside .dots {
+  text-decoration: none;
+  font-size: 50px;
+  position: relative;
+  top: -50px;
+  margin-right: -5px;
+  color: #bbb;
 }
 
-.rightside ul.dots li {
-  display: inline-flex;
-  list-style: none;
-  width: 7px;
-  height: 7px;
+.rightside .dots:hover {
+  color: #37393a;
 }
 
-
-.rightside span {
-  float: right;
+.rightside .last-line {
   font-size: 15px;
   letter-spacing: normal;
-  margin-top: -10px;
+  position: relative;
+  top: -40px;
+  left: 150px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 107px;
+  height: 180px;
   background-color: #000;
   background-image: url(bg_footer.jpg);
   color: #a5a5a5;
