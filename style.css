@@ -113,7 +113,9 @@ body {
   border: 5px solid rgba(0, 0, 0, .2);
   background-clip: padding-box;
   text-shadow: 0px 1px #d72d05;
-  transition: opacity 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+  position: relative;
 }
 
 .button:hover {
@@ -134,17 +136,17 @@ body {
 }
 
 .triple-column {
+  display: flex;
+  justify-content: space-between;
   height: 152px;
   margin-bottom: 35px;
+  color: #37393a;
+  letter-spacing: normal;
 }
 
 .thirds
 {
-float: left;
-width: 30%;
-margin-right: 30px;
-color: #37393a;
-letter-spacing: normal;
+  width: 30%;
 }
 
 .thirds h1 {
@@ -174,6 +176,8 @@ letter-spacing: normal;
 
 .banner {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #373737;
   color: #c3ccd5;
   width: 922px;
@@ -183,24 +187,25 @@ letter-spacing: normal;
   margin-bottom: 50px;
 }
 
+.banner::after {
+  content: '';
+  width: 1px;
+  height: 120px;
+  background-color: #FFF;
+  opacity: 0.1;
+  position: relative;
+  top: -5px;
+  right: 120px;
+}
+
 .banner p {
   font-size: 24.5px;
-  margin: 32px 0 0 20px;
+  margin-right: 40px;
 }
 
 .banner p b {
   color: #fff;
   font-weight: 300;
-}
-
-.banner .button {
-  margin: 21px 32px 0 50px;
-}
-
-.banner .pxline-vertical {
-  width: 1px;
-  height: 100%;
-  color: green;
 }
 
 .portfolio {
@@ -274,7 +279,7 @@ letter-spacing: normal;
   width: 960px;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .leftside {
@@ -291,7 +296,7 @@ letter-spacing: normal;
 }
 
 .shortnote {
-  margin-bottom: 30px;
+  margin-bottom: 5em;
 }
 
 .leftside a {
@@ -373,6 +378,7 @@ letter-spacing: normal;
   top: -50px;
   margin-right: -5px;
   color: #bbb;
+  transition: color 0.5s;
 }
 
 .rightside .dots:hover {
